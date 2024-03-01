@@ -24,16 +24,6 @@ else
    echo "X is equal to Y"
 fi
 
-Exactly one of the following lines:
-- X is less than Y
-- X is greater than Y
-- X is equal to Y
-
-
-
-
-
-
 # Given two integers,  and , find their sum, difference, product, and quotient.
 read -p "Enter X: " X
 read -p "Enter Y: " Y
