@@ -308,3 +308,33 @@
 # do
 #     echo "${strarr[n]}"
 # done
+
+#Split string by another string
+# str="WeLearnWelcomeLearnYouLearnOnLearnJava"
+# delimiter="Learn"
+# s="$str$delimiter"
+# array=()
+
+# while [[ $s ]];
+# do
+# array+=("${s%%$delimiter*}")
+# s=${s#*$delimiter}
+# done
+# declare -p array
+
+# Split using Trim
+# my_str="we;welcome;you;on;javatpoint"
+# my_arr=($(echo $my_str | tr ";" "\n"))
+# for i in "${my_arr[@]}"
+# do
+#     echo $i
+# done
+
+# Extract a substring; first 10 chars
+# str="We welcome you on Javatpoint"
+# echo "String: $str"
+# echo "Total chars in the string: ${#str}"
+# substr="${str:0:10}"
+# echo "Substring: $substr"
+# echo "Total chars in the substring: ${#substr}"
+
