@@ -338,3 +338,6 @@
 # echo "Substring: $substr"
 # echo "Total chars in the substring: ${#substr}"
 
+X=5
+Y=2
+echo $((X+Y))
