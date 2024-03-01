@@ -283,10 +283,28 @@
 # echo "$length5 using method 5"
 
 # Split by space
-read -p "Enter a string to split by space: " str
-IFS=" " #setting space as delimiter
-read -ra ADDR <<< "$str" #Reading str as an array as tocens sep by IFS
-for i in "${ADDR[@]}"; #Accessing each elem of array
-do
-echo "$i"
-done
+# read -p "Enter a string to split by space: " str
+# IFS=" " #setting space as delimiter
+# read -ra ADDR <<< "$str" #Reading str as an array as tocens sep by IFS
+# for i in "${ADDR[@]}"; #Accessing each elem of array
+# do
+# echo "$i"
+# done
+
+# Split by Symbol
+# read -p "Enter Name, State, Hair to split by comma: " str
+# IFS=','
+# read -a strarr <<< "$str" #Read in str as an array separated by IFS
+# echo "Name: ${strarr[0]}"
+# echo "State: ${strarr[1]}"
+# echo "Hair: ${strarr[2]}"
+
+# Split without $IFS; can't get this to work
+# read -p "Enter any string separated by (:): " str #Reading in string
+# readarray -d : -t strarr <<< "$str" #Split based on delimiter :
+# printf "\n"
+# #Print each value
+# for (( n=0; n<${#strarr[*]};n++))
+# do
+#     echo "${strarr[n]}"
+# done
