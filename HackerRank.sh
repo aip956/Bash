@@ -45,3 +45,9 @@ elif [[ "$char" = 'N' || "$char" = 'n' ]]; then
    echo "NO"
 fi
 
+# Your task is to use for loops to display only odd natural numbers from 1 to 99.
+for num in {1..99..2}
+do
+echo $num
+done
+
