@@ -338,6 +338,20 @@
 # echo "Substring: $substr"
 # echo "Total chars in the substring: ${#substr}"
 
-X=5
-Y=2
-echo $((X+Y))
+# X=5
+# Y=2
+# echo $((X+Y))
+
+# Bash Substring: Extract till Specific Chars onwards
+# str="We welcome you on Javatpoint"
+# # substr=”${str:11}”
+# # Echo $substr
+
+# substr=”${str:(-11)}”
+# Echo "$substr"
+
+# Concatenate
+str1="We welcome you"
+str2=" on Javatpoint"
+str3="$str1$str2"
+echo "$str3"
