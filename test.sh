@@ -351,7 +351,26 @@
 # Echo "$substr"
 
 # Concatenate
-str1="We welcome you"
-str2=" on Javatpoint"
-str3="$str1$str2"
-echo "$str3"
+# str1="We welcome you"
+# str2=" on Javatpoint"
+# str3="$str1$str2"
+# echo "$str3"
+
+# Print the elements of an array all on one line and 
+# separated by a space. It is guaranteed that no elements
+#  will be empty.
+my_array=("A1", "b2", "C3d", "412", "ee")
+# for elem in "${my_array[@]}";
+# do
+#     echo -n "$elem, "
+# done | tr ',' ' '
+# echo
+
+# for elem in "${my_array[@]}"
+# do
+#     echo "$elem"
+# done
+
+# Array length ${#a[@]}
+
+echo ${#my_array[@]}
