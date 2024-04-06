@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Loop through each filename provided as argument starting from the second one
+for ((i=1; i<=$#; i++)); do
+    # Create directory exXX where XX is the number of the directory
+    dir="ex$(printf "%02d" $(($i-1)))"
+    mkdir -p "$dir"
+    # Create file filename.rs inside the directory
+    touch "${dir}/${!i}.rs"
+done
